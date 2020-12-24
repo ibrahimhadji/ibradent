@@ -26,13 +26,13 @@ module.exports = {
         type: Sequelize.DATE
       },
       total: {
-        type: Sequelize.FLOAT
+        type: Sequelize.DOUBLE
       },
       vers: {
-        type: Sequelize.FLOAT
+        type: Sequelize.DOUBLE
       },
       rest: {
-        type: Sequelize.FLOAT
+        type: Sequelize.DOUBLE
       },
       obs: {
         type: Sequelize.STRING

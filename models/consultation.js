@@ -25,9 +25,9 @@ module.exports = (sequelize, DataTypes) => {
     userid:DataTypes.INTEGER,
     type: DataTypes.STRING,
     rdv: DataTypes.DATE,
-    total: DataTypes.FLOAT,
-    vers: DataTypes.FLOAT,
-    rest: DataTypes.FLOAT,
+    total: DataTypes.DOUBLE,
+    vers: DataTypes.DOUBLE,
+    rest: DataTypes.DOUBLE,
     obs: DataTypes.STRING
   }, {
     sequelize,
