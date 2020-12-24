@@ -54,7 +54,7 @@ app.post('/patient',async (req,res)=>{
         const{nom,prenom,age,sexe,maladiechr,numero,uuid}=req.body;
 
 console.log(uuid);
-var ph = await pat.findOne({where:{nom,prenom,age,numero}});
+var ph = await pat.findOne({where:{nom,numero}});
 
 
 if (typeof ph !== 'undefined' && ph !== null){
