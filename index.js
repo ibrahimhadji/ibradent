@@ -41,6 +41,12 @@ app.post('/patientcons',async (req,res)=>{
         return(res.json(ph));
         
         })
+        app.post('/linecons',async (req,res)=>{
+            const{consid,rdv,vers,type,obs}=req.body;
+            var ph = await consultation.create({consid,rdv,vers,type,obs});
+            return(res.json(ph));
+            
+            })
     
 
 app.post('/patient',async (req,res)=>{
